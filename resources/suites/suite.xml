@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite">
+    <listeners>
+        <listener class-name="common.SuiteAlterer"/>
+    </listeners>
+    <test name="regression" parallel="classes">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+
+            <class name="tests.C01_Verify_user_can_search_for_weather_data_of_given_city"/>
+
+        </classes>
+    </test>
+</suite>

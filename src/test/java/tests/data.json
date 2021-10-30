@@ -1,0 +1,37 @@
+{
+  "C01_Verify_user_can_search_for_weather_data_of_given_city": [
+    {
+      "TestDataNo.": "Data_01",
+      "RunMode": "Y",
+      "TestDataPurpose": "User can search data with search string contains city name only",
+      "SearchString": "Ho Chi Minh"
+    },
+    {
+      "TestDataNo.": "Data_02",
+      "RunMode": "Y",
+      "TestDataPurpose": "User can search data with search string contains city name and country code, separated by comma",
+      "SearchString": "Ho Chi Minh,VN"
+    }
+  ],
+
+  "C05_Verify_user_can_NOT_search_for_weather_data_of_given_city_with_invalid_search_string": [
+    {
+      "TestDataNo.": "Data_01",
+      "RunMode": "Y",
+      "TestDataPurpose": "User can NOT search data with search string contains invalid city name",
+      "SearchString": "Ho Chi Mihn"
+    },
+    {
+      "TestDataNo.": "Data_02",
+      "RunMode": "Y",
+      "TestDataPurpose": "User can NOT search data with search string contains city name and country code with wrong order",
+      "SearchString": "VN, Ho Chi Minh"
+    },
+    {
+      "TestDataNo.": "Data_03",
+      "RunMode": "Y",
+      "TestDataPurpose": "User can NOT search data with search string contains city name and invalid country code, separated by comma",
+      "SearchString": "Ho Chi Minh, VNM"
+    }
+  ]
+}
